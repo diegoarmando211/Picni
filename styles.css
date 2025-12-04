@@ -637,11 +637,73 @@ body {
 }
 
 /* Responsive */
+
+/* Tablets grandes y laptops pequeñas (768px - 1024px) */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 0 30px;
+    }
+
+    .nav-menu {
+        gap: 25px;
+    }
+
+    .nav-menu li a {
+        font-size: 16px;
+    }
+
+    .hero {
+        padding-left: 50px;
+    }
+
+    .hero-title {
+        font-size: 12vw;
+        margin-top: 5cm;
+    }
+
+    .presentacion {
+        padding: 60px 30px;
+    }
+
+    .presentacion-titulo {
+        font-size: 52px;
+    }
+
+    .presentacion-texto {
+        font-size: 18px;
+    }
+
+    .personalizados-titulo {
+        font-size: 48px;
+    }
+
+    .personalizados-descripcion {
+        font-size: 18px;
+    }
+
+    .personalizados-lista li {
+        font-size: 18px;
+    }
+
+    .tu-momento-titulo {
+        font-size: 60px;
+    }
+}
+
+/* Tablets (768px - 1023px) */
 @media (max-width: 768px) {
+    .header {
+        padding: 10px 0;
+    }
+
     .navbar {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
         padding: 0 20px;
+    }
+
+    .logo span {
+        font-size: 16px;
     }
 
     .nav-menu {
@@ -651,56 +713,233 @@ body {
     }
 
     .nav-menu li a {
-        font-size: 12px;
+        font-size: 14px;
+    }
+
+    .hero {
+        height: 60vh;
+        padding-left: 30px;
+        align-items: flex-end;
+        padding-bottom: 50px;
     }
 
     .hero-title {
-        font-size: 50px;
+        font-size: 15vw;
+        margin-top: 0;
+    }
+
+    /* Presentación */
+    .presentacion {
+        padding: 50px 25px;
     }
 
     .presentacion-container {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 30px;
     }
 
     .presentacion-titulo {
-        font-size: 48px;
+        font-size: 44px;
+        text-align: center;
+    }
+
+    .presentacion-izquierda {
+        padding-top: 0;
     }
 
     .presentacion-texto {
-        font-size: 14px;
+        font-size: 16px;
+    }
+
+    /* Picnics Personalizados */
+    .picnics-personalizados {
+        padding: 50px 25px;
     }
 
     .personalizados-container {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 35px;
     }
 
     .personalizados-titulo {
-        font-size: 40px;
+        font-size: 38px;
+        text-align: center;
     }
 
-    .personalizados-descripcion,
+    .personalizados-descripcion {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .personalizados-lista {
+        text-align: left;
+    }
+
     .personalizados-lista li {
-        font-size: 14px;
+        font-size: 16px;
+    }
+
+    /* Servicios */
+    .servicios {
+        padding: 50px 25px;
     }
 
     .servicios-container {
         grid-template-columns: 1fr;
-        gap: 50px;
+        gap: 40px;
     }
 
     .servicio-titulo {
-        font-size: 24px;
+        font-size: 26px;
+    }
+
+    /* Tu Momento */
+    .tu-momento {
+        padding: 50px 25px;
     }
 
     .tu-momento-titulo {
         font-size: 50px;
+        text-align: center;
+        margin-bottom: 40px;
     }
 
     .tu-momento-pasos {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 35px;
+    }
+
+    .paso-titulo {
+        font-size: 24px;
+    }
+
+    .paso-descripcion {
+        font-size: 18px;
+    }
+
+    /* Imagen Final */
+    .imagen-final {
+        height: 50vh;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 50px 25px 25px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-titulo {
+        font-size: 22px;
+    }
+
+    .footer-texto,
+    .footer-red {
+        font-size: 16px;
+    }
+
+    /* Modal */
+    .modal-contenido {
+        width: 95%;
+        padding: 30px 20px;
+        margin: 5% auto;
+    }
+
+    .modal-titulo {
+        font-size: 28px;
+    }
+
+    .modal-descripcion {
+        font-size: 14px;
+    }
+
+    .form-subtitulo {
+        font-size: 18px;
+    }
+}
+
+/* Móviles (480px - 767px) */
+@media (max-width: 480px) {
+    .logo-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+
+    .logo span {
+        font-size: 12px;
+    }
+
+    .nav-menu li a {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+
+    .hero {
+        height: 50vh;
+        padding-left: 20px;
+        padding-bottom: 30px;
+    }
+
+    .hero-title {
+        font-size: 18vw;
+    }
+
+    /* Presentación */
+    .presentacion {
+        padding: 40px 20px;
+    }
+
+    .presentacion-titulo {
+        font-size: 32px;
+    }
+
+    .presentacion-texto {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* Picnics Personalizados */
+    .picnics-personalizados {
+        padding: 40px 20px;
+    }
+
+    .personalizados-titulo {
+        font-size: 30px;
+    }
+
+    .personalizados-descripcion {
+        font-size: 14px;
+    }
+
+    .personalizados-lista li {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    /* Servicios */
+    .servicios {
+        padding: 40px 20px;
+    }
+
+    .servicio-imagen {
+        height: 280px;
+    }
+
+    .servicio-titulo {
+        font-size: 22px;
+    }
+
+    /* Tu Momento */
+    .tu-momento {
+        padding: 40px 20px;
+    }
+
+    .tu-momento-titulo {
+        font-size: 36px;
     }
 
     .paso-titulo {
@@ -708,30 +947,123 @@ body {
     }
 
     .paso-descripcion {
-        font-size: 16px;
+        font-size: 15px;
     }
 
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
+    .btn-reserva {
+        padding: 15px 35px;
+        font-size: 14px;
+    }
+
+    /* Imagen Final */
+    .imagen-final {
+        height: 40vh;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 20px 20px;
     }
 
     .footer-titulo {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .footer-texto,
     .footer-red {
+        font-size: 14px;
+    }
+
+    .footer-copyright p {
+        font-size: 12px;
+    }
+
+    /* Modal */
+    .modal-contenido {
+        width: 98%;
+        padding: 25px 15px;
+        border-radius: 15px;
+    }
+
+    .modal-titulo {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .modal-descripcion {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .modal-cerrar {
+        font-size: 32px;
+        top: 15px;
+        right: 20px;
+    }
+
+    .form-seccion {
+        gap: 12px;
+    }
+
+    .form-subtitulo {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .form-reserva input,
+    .form-reserva select,
+    .form-reserva textarea {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .checkbox-label {
+        font-size: 13px;
+        padding: 6px;
+    }
+
+    .precio-resumen {
+        padding: 15px;
+    }
+
+    .precio-linea {
+        font-size: 15px;
+    }
+
+    .precio-total {
+        font-size: 20px;
+    }
+
+    .btn-enviar-reserva {
+        padding: 15px 30px;
         font-size: 16px;
     }
 }
 
-@media (max-width: 480px) {
+/* Móviles muy pequeños (max-width: 375px) */
+@media (max-width: 375px) {
     .hero-title {
-        font-size: 35px;
+        font-size: 20vw;
     }
 
-    .logo span {
-        font-size: 14px;
+    .presentacion-titulo {
+        font-size: 28px;
+    }
+
+    .personalizados-titulo {
+        font-size: 26px;
+    }
+
+    .tu-momento-titulo {
+        font-size: 30px;
+    }
+
+    .nav-menu li a {
+        font-size: 10px;
+        padding: 4px 6px;
+    }
+
+    .modal-titulo {
+        font-size: 20px;
     }
 }
